@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Moneymalist</title>
+<meta name="description" content="Privacy Policy for Moneymalist — Expense Tracker. Offline-first, no data collection, no trackers.">
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1f2933; --muted: #647380;
+    --accent: #0f766e; --border: #e4e9ee; --card: #f7f9fb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f172a; --fg: #e6edf3; --muted: #9aa8b8;
+      --accent: #5eead4; --border: #24324a; --card: #16233b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2.5rem 1.25rem 5rem;
+    background: var(--bg); color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .4rem; letter-spacing: -.02em; }
+  h2 {
+    font-size: 1.2rem; margin: 2.6rem 0 .75rem; padding-top: 1.4rem;
+    border-top: 1px solid var(--border); letter-spacing: -.01em;
+  }
+  h3 { font-size: 1rem; margin: 1.5rem 0 .4rem; color: var(--accent); }
+  .updated { color: var(--muted); font-size: .9rem; margin-bottom: 2rem; }
+  .lede {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 10px; padding: 1.1rem 1.25rem; margin: 0 0 1rem;
+  }
+  ul { padding-left: 1.25rem; }
+  li { margin: .35rem 0; }
+  a { color: var(--accent); }
+  code {
+    background: var(--card); border: 1px solid var(--border);
+    padding: .1rem .35rem; border-radius: 4px; font-size: .9em;
+  }
+  .table-wrap { overflow-x: auto; margin: 1rem 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 24rem; }
+  th, td { text-align: left; padding: .6rem .7rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+  footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--border); color: var(--muted); font-size: .9rem; }
+  strong { font-weight: 650; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Privacy Policy</h1>
+<p class="updated">Moneymalist — Expense Tracker · Last updated 21 July 2026</p>
+
+<div class="lede">
+  <p style="margin:0">Moneymalist is <strong>offline-first</strong>. Your financial data is stored on
+  your device and is never sent to any server operated by the developer. There is no account system,
+  no cloud sync, and no analytics.</p>
+</div>
+
+<h2>1. Information We Collect</h2>
+<p><strong>We do not collect any of your data.</strong> The developer operates no servers and has no
+ability to access, view, or retrieve anything you enter into the app.</p>
+
+<h3>Stored on your device</h3>
+<ul>
+  <li>Transactions (income and expenses) — amounts, dates, notes, tags</li>
+  <li>Budgets and budget categories</li>
+  <li>Accounts and balances</li>
+  <li>App preferences and settings</li>
+</ul>
+<p>This is held in a local database (SQLite) in the app's private storage area, which other apps on
+your device cannot read.</p>
+
+<h3>Never leaves your device</h3>
+<ul>
+  <li>Your financial records are <strong>not</strong> transmitted to the developer</li>
+  <li>No advertising SDKs</li>
+  <li>No analytics or usage-tracking SDKs</li>
+  <li>No user account or profile on any server</li>
+</ul>
+
+<h2>2. Google Sign-In and Google Drive Backup (optional)</h2>
+<p>The app offers an <strong>optional</strong> backup feature. It is off by default and only used if
+you choose to sign in with Google.</p>
+<ul>
+  <li><strong>Google Sign-In</strong> identifies which Drive account to back up to. The app receives
+  your name, email address, and profile picture. This stays on your device and is used only to show
+  which account is signed in.</li>
+  <li>The app requests the <code>drive.file</code> scope — the narrowest Drive permission available.
+  It grants access <strong>only to files the app itself creates</strong>. The app cannot see, read,
+  or modify any of your other Drive files, photos, or documents.</li>
+  <li>Backups are saved to <strong>your own Google Drive</strong>. They are visible to you, and you
+  can open or delete them yourself at any time.</li>
+  <li>Backups travel directly between your device and Google. The developer never receives,
+  intercepts, or stores a copy.</li>
+  <li>Your Google account information is <strong>never</strong> shared with third parties.</li>
+</ul>
+<p>You can revoke access any time at
+<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+<h2>3. Device Backup Behaviour</h2>
+<p>Android can automatically back up app data to your Google account. <strong>Moneymalist
+deliberately excludes your financial database from this</strong>, so your transaction history is
+never uploaded to the cloud without you explicitly asking for it.</p>
+<p>Cloud backup of financial data happens <strong>only</strong> through the optional Drive feature in
+Section 2, which you control.</p>
+
+<h2>4. Permissions</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Permission</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td>Internet / Network state</td><td>Only to upload and download your Google Drive backups</td></tr>
+    <tr><td>Notifications</td><td>Local reminders you choose to enable</td></tr>
+    <tr><td>Run at startup</td><td>To reschedule reminders after the device restarts</td></tr>
+    <tr><td>Vibration</td><td>Haptic feedback when interacting with the app</td></tr>
+    <tr><td>Biometrics / Fingerprint</td><td>Optional app lock, if you enable it</td></tr>
+  </tbody>
+</table>
+</div>
+<p>The app does <strong>not</strong> request access to your contacts, location, camera, microphone,
+photos, SMS, call logs, or files elsewhere on your device.</p>
+<p>Exported files (CSV, PDF) are written to the app's own private storage and are shared only if you
+explicitly choose to share them.</p>
+
+<h2>5. Purchases and Subscriptions</h2>
+<ul>
+  <li>All payments are processed by <strong>Google Play Billing</strong>. The developer never sees or
+  handles your card details, billing address, or any payment information.</li>
+  <li>The app stores only a simple flag on your device recording whether premium is unlocked.</li>
+  <li>Subscriptions are managed through your Google Play account, where you can view, change, or
+  cancel them at any time.</li>
+  <li>Refunds are handled under Google Play's refund policy.</li>
+</ul>
+
+<h2>6. Third-Party Services</h2>
+<ul>
+  <li><strong>Expo / React Native</strong> — the frameworks the app is built with. They do not
+  collect your data in this app.</li>
+  <li><strong>Google Play Services</strong> — required for Google Sign-In, Drive backup, and
+  purchases. Google may collect standard information such as crash reports and basic install data
+  according to your device settings and Google's own privacy policy.</li>
+  <li><strong>Google Drive API</strong> — used only for the optional backup feature above.</li>
+</ul>
+<p><strong>The app integrates no advertising networks, no marketing trackers, and no third-party
+analytics services.</strong></p>
+
+<h2>7. Deleting Your Data</h2>
+<h3>On your device</h3>
+<ul>
+  <li>Delete individual transactions, budgets, or accounts inside the app</li>
+  <li>Or remove everything: <strong>Android Settings → Apps → Moneymalist → Storage → Clear data</strong></li>
+  <li>Or uninstall the app, which removes all local data</li>
+</ul>
+<h3>Backups in your Google Drive</h3>
+<ul>
+  <li>Open Google Drive, find files named <code>backup_*.bk</code>, and delete them</li>
+  <li>Revoke Drive access at
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a></li>
+</ul>
+<p>Since the developer holds no copy of your data, there is nothing on our side to delete. If you
+have questions about deletion, contact us at the address in Section 10 and we will respond within
+30 days.</p>
+
+<h2>8. Children's Privacy</h2>
+<p>Moneymalist is not directed at children under 13. The app collects no personal information from
+anyone, including children. No such data reaches the developer, as the app transmits nothing to us.</p>
+
+<h2>9. Security</h2>
+<ul>
+  <li>Your data is stored in the app's private storage area, isolated from other apps by Android.</li>
+  <li>Sensitive values are held in encrypted device storage.</li>
+  <li>An optional biometric lock can require fingerprint or face unlock to open the app.</li>
+  <li>If you use Drive backup, the security of those files is governed by Google's practices and
+  your Google account settings.</li>
+</ul>
+<p>No method of electronic storage is completely secure, but because your data never travels to a
+developer-operated server, the risk surface is limited to your own device and your own Google
+account.</p>
+
+<h2>10. Contact</h2>
+<p>Questions about this Privacy Policy or your data:</p>
+<ul>
+  <li><strong>Email:</strong> <a href="mailto:moneymalist.app@gmail.com">moneymalist.app@gmail.com</a></li>
+  <li><strong>App:</strong> Moneymalist — Expense Tracker (<code>com.moneymalist</code>)</li>
+</ul>
+
+<h2>11. Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an
+updated date. Material changes will also be noted in the app's release notes.</p>
+
+<footer>
+  Moneymalist — Expense Tracker · <code>com.moneymalist</code>
+</footer>
+
+</main>
+</body>
+</html>
